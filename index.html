@@ -5,94 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>HESED Paraguay | Agencia Creativa</title>
-
-  <meta
-    name="description"
-    content="HESED Paraguay es una agencia creativa especializada en comunicación estratégica, producción audiovisual, marketing y desarrollo de contenidos."
-  />
-  <meta
-    name="keywords"
-    content="HESED Paraguay, Hesed.py, agencia creativa Paraguay, marketing Paraguay, producción audiovisual, comunicación estratégica, desarrollo de contenidos"
-  />
+  <meta name="description" content="HESED Paraguay es una agencia creativa especializada en comunicación estratégica, producción audiovisual, marketing y desarrollo de contenidos." />
+  <meta name="keywords" content="HESED Paraguay, Hesed.py, agencia creativa Paraguay, marketing Paraguay, producción audiovisual, comunicación estratégica, desarrollo de contenidos" />
   <meta name="author" content="HESED Paraguay" />
 
   <meta property="og:title" content="HESED Paraguay | Conectando ideas" />
-  <meta
-    property="og:description"
-    content="Agencia creativa especializada en comunicación estratégica, producción audiovisual, marketing y desarrollo de contenidos."
-  />
+  <meta property="og:description" content="Agencia creativa especializada en comunicación estratégica, producción audiovisual, marketing y desarrollo de contenidos." />
   <meta property="og:image" content="./logo-hesed.png" />
   <meta property="og:type" content="website" />
 
   <link rel="icon" href="./logo-hesed.png" type="image/png" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
-
 <body>
   <header class="site-header">
-    <nav class="navbar">
-      <a href="#inicio" class="brand" aria-label="Ir al inicio">
-        <img src="./logo-hesed.png" alt="Logo HESED Paraguay" class="brand-logo" />
-        <span>HESED Paraguay</span>
-      </a>
+    <div class="container">
+      <nav class="navbar">
+        <a href="#inicio" class="brand">
+          <img src="./logo-hesed.png" alt="Logo HESED Paraguay" class="brand-logo" />
+          <span>HESED Paraguay</span>
+        </a>
 
-      <button class="menu-button" id="menuButton" aria-label="Abrir menú">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+          ☰
+        </button>
 
-      <div class="nav-links" id="navLinks">
-        <a href="#quienes-somos">Quiénes somos</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#metodo">Método</a>
-        <a href="#contacto" class="nav-cta">Contacto</a>
-      </div>
-    </nav>
+        <div class="nav-links" id="navLinks">
+          <a href="#quienes-somos">Quiénes somos</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#metodo">Método</a>
+          <a href="#contacto" class="nav-contacto">Contacto</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section id="inicio" class="hero">
       <div class="container hero-grid">
         <div class="hero-content">
-          <p class="eyebrow">AGENCIA CREATIVA · PARAGUAY</p>
+          <p class="section-tag">AGENCIA CREATIVA · PARAGUAY</p>
 
           <h1>Conectamos ideas con mensajes de alto impacto.</h1>
 
-          <p class="hero-description">
+          <p class="hero-text">
             En <strong>HESED</strong> somos una agencia creativa especializada en comunicación estratégica,
             producción audiovisual, marketing y desarrollo de contenidos. Trabajamos junto a empresas,
             instituciones, marcas y organizaciones para transformar ideas en mensajes claros, memorables
             y profesionales.
           </p>
 
-          <div class="hero-actions">
-            <a class="button button-primary" href="https://wa.me/595992580823" target="_blank" rel="noopener">
+          <div class="hero-buttons">
+            <a href="https://wa.me/595992580823" target="_blank" rel="noopener" class="btn btn-primary">
               Escribir por WhatsApp
             </a>
-
-            <a class="button button-secondary" href="#servicios">
+            <a href="#servicios" class="btn btn-secondary">
               Ver servicios
             </a>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Imagen institucional de HESED">
-          <div class="logo-frame">
-            <img src="./logo-hesed.png" alt="HESED conectando ideas" class="hero-logo" />
+        <div class="hero-visual">
+          <div class="hero-card">
+            <img src="./logo-hesed.png" alt="HESED conectando ideas" class="hero-image" />
           </div>
         </div>
       </div>
     </section>
 
     <section id="quienes-somos" class="section">
-      <div class="container split-section">
-        <div class="section-heading">
-          <p class="eyebrow">QUIÉNES SOMOS</p>
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">QUIÉNES SOMOS</p>
           <h2>Una agencia que une creatividad, estrategia y ejecución.</h2>
         </div>
 
-        <div class="content-card">
+        <div class="info-box">
           <p>
             HESED Paraguay nace para acompañar a marcas, empresas e instituciones en la construcción
             de mensajes con propósito. Nos enfocamos en entender cada idea, ordenar la comunicación
@@ -107,20 +95,20 @@
       </div>
     </section>
 
-    <section id="servicios" class="section section-soft">
+    <section id="servicios" class="section section-alt">
       <div class="container">
-        <div class="section-heading center">
-          <p class="eyebrow">QUÉ OFRECEMOS</p>
+        <div class="section-header center">
+          <p class="section-tag">QUÉ OFRECEMOS</p>
           <h2>Soluciones creativas para comunicar mejor.</h2>
-          <p>
+          <p class="section-subtext">
             Desarrollamos propuestas integrales para marcas, instituciones y organizaciones que necesitan
             comunicar con claridad, estética y estrategia.
           </p>
         </div>
 
-        <div class="services-grid">
-          <article class="service-card">
-            <div class="service-icon">01</div>
+        <div class="cards-grid">
+          <article class="card">
+            <span class="card-number">01</span>
             <h3>Comunicación estratégica</h3>
             <p>
               Ordenamos ideas, definimos mensajes clave y desarrollamos planes de comunicación alineados
@@ -128,8 +116,8 @@
             </p>
           </article>
 
-          <article class="service-card">
-            <div class="service-icon">02</div>
+          <article class="card">
+            <span class="card-number">02</span>
             <h3>Producción audiovisual</h3>
             <p>
               Creamos videos institucionales, comerciales, contenidos para redes, coberturas y piezas
@@ -137,8 +125,8 @@
             </p>
           </article>
 
-          <article class="service-card">
-            <div class="service-icon">03</div>
+          <article class="card">
+            <span class="card-number">03</span>
             <h3>Marketing y contenidos</h3>
             <p>
               Desarrollamos contenido para redes sociales, campañas digitales, piezas gráficas y estrategias
@@ -146,8 +134,8 @@
             </p>
           </article>
 
-          <article class="service-card">
-            <div class="service-icon">04</div>
+          <article class="card">
+            <span class="card-number">04</span>
             <h3>Identidad y creatividad</h3>
             <p>
               Acompañamos la construcción visual y conceptual de marcas, proyectos, lanzamientos,
@@ -160,32 +148,32 @@
 
     <section id="metodo" class="section">
       <div class="container">
-        <div class="section-heading center">
-          <p class="eyebrow">NUESTRO MÉTODO</p>
+        <div class="section-header center">
+          <p class="section-tag">NUESTRO MÉTODO</p>
           <h2>De la idea al mensaje final.</h2>
         </div>
 
-        <div class="method-grid">
-          <article class="method-step">
-            <span>01</span>
+        <div class="cards-grid">
+          <article class="card">
+            <span class="card-number">01</span>
             <h3>Escuchamos</h3>
             <p>Entendemos la necesidad, el público, el contexto y el objetivo de comunicación.</p>
           </article>
 
-          <article class="method-step">
-            <span>02</span>
+          <article class="card">
+            <span class="card-number">02</span>
             <h3>Planificamos</h3>
             <p>Definimos estrategia, tono, canales, formatos y acciones concretas.</p>
           </article>
 
-          <article class="method-step">
-            <span>03</span>
+          <article class="card">
+            <span class="card-number">03</span>
             <h3>Producimos</h3>
             <p>Diseñamos, grabamos, editamos y desarrollamos los contenidos necesarios.</p>
           </article>
 
-          <article class="method-step">
-            <span>04</span>
+          <article class="card">
+            <span class="card-number">04</span>
             <h3>Conectamos</h3>
             <p>Entregamos mensajes claros, creativos y preparados para generar impacto.</p>
           </article>
@@ -193,11 +181,11 @@
       </div>
     </section>
 
-    <section id="contacto" class="section contact-section">
+    <section id="contacto" class="section contacto-section">
       <div class="container">
-        <div class="contact-card">
+        <div class="contact-box">
           <div>
-            <p class="eyebrow">CONTACTO</p>
+            <p class="section-tag">CONTACTO</p>
             <h2>Hablemos de tu próxima idea.</h2>
             <p>
               Contanos qué necesitás comunicar y te ayudamos a convertirlo en una propuesta clara,
@@ -206,10 +194,9 @@
           </div>
 
           <div class="contact-actions">
-            <a class="button button-primary" href="https://wa.me/595992580823" target="_blank" rel="noopener">
+            <a href="https://wa.me/595992580823" target="_blank" rel="noopener" class="btn btn-primary">
               Contactar por WhatsApp
             </a>
-
             <p class="contact-phone">+595 992 580 823</p>
           </div>
         </div>
@@ -217,7 +204,7 @@
     </section>
   </main>
 
-  <a class="whatsapp-float" href="https://wa.me/595992580823" target="_blank" rel="noopener">
+  <a href="https://wa.me/595992580823" target="_blank" rel="noopener" class="whatsapp-float">
     WhatsApp
   </a>
 
