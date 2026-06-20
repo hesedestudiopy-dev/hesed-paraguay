@@ -1,14 +1,15 @@
-const menuButton = document.getElementById("menuButton");
+const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
-if (menuButton && navLinks) {
-  menuButton.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
   });
 
-  navLinks.querySelectorAll("a").forEach((link) => {
+  const links = navLinks.querySelectorAll("a");
+  links.forEach((link) => {
     link.addEventListener("click", () => {
-      navLinks.classList.remove("open");
+      navLinks.classList.remove("show");
     });
   });
 }
